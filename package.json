@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node build/server.js",
     "serve": "nodemon src/server.ts",
-    "build": "tsc",
+    "build": "tsc -p",
     "tscri": "tsc --init",
     "push": "pm2 start server1.js",
     "pull": "pm2 start server2.js",
@@ -15,7 +15,9 @@
     "restart": "pm2 restart 0 && pm2 restart 1",
     "show": "pm2 show 0",
     "monitor": "pm2 monit",
-    "delete": "pm2 delete 1"
+    "delete": "pm2 delete 0",
+    "list": "pm2 list",
+    "inf": "pm2"
   },
   "keywords": [],
   "author": "",
